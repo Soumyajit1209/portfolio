@@ -1,7 +1,7 @@
 import React from "react";
 import TitleHeader from "../components/TitleHeader";
 import { expCards } from "../constants";
-import Glowcard from "../components/Glowcard";
+import GlowCard from "../components/GlowCard";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -75,11 +75,11 @@ const ExperienceSection = () => {
             {expCards.map((card, index) => (
               <div key={card.title} className="exp-card-wrapper">
                 <div className="xl:w-2/6">
-                  <Glowcard card={card} index={index}>
+                  <GlowCard card={card} index={index}>
                     <div>
                       <img src={card.imgPath} alt={card.title} />
                     </div>
-                  </Glowcard>
+                  </GlowCard>
                 </div>
                 <div className="xl:w-4/6 ">
                   <div className="flex item-start">
